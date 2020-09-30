@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexis Ramírez &#124; UI&#47;UX Designer</title>
+    <link rel="stylesheet" href="/stylesheets/css/main.css">
+</head>
+
+<body>
+    <!-- Here's the Navbar and its contents-->
+    <header>
+        <!--Main logo-->
+        <div class="logo-container">
+            <a><img class="header-logo hidden" src="./resources/whiteMainLogo.svg" alt="Alexis Ramirez Logo"></a>
+        </div>
+
+        <!--Links-->
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><a class="menu-nav__link linkToProjects">PROJECTS</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__link linkToAbout">ABOUT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--First part of the website-->
+        <section class="presentation">
+            <div class="presentation-logoContainer">
+                <img class="presentation-logoContainer__logo" src="./resources/whiteMainLogo.svg"
+                    alt="Alexis Ramirez Logo">
+            </div>
+            <h1 class="presentation-title">Hello, I’m <br> Alexis Ramírez</h1>
+            <p class="presentation-description">A student focused on <span class="yHighlight">UX</span>, <span
+                    class="yHighlight">UI</span> & <span class="yHighlight">Front End Development</span>. Dive into
+                my
+                world designed between dream and
+                reality.</p>
+            <a href="#projects" class="presentation-projectsButton pillBorderButton">View my projects</a>
+            <div class="presentation-socialMedia">
+                <a class="linkToFacebook" target="_blank"><img class="presentation-socialMedia__icon"
+                        src="./resources/facebookWhite.svg" alt="Facebook"></a>
+                <a class="linkToLinkedIn" target="_blank"><img class="presentation-socialMedia__icon"
+                        src="./resources/linkedinWhite.svg" alt="LinkedIn"></a>
+                <a class="linkToEmail" target="_blank"><img class="presentation-socialMedia__icon"
+                        src="./resources/emailWhite.svg" alt="Email"></a>
+            </div>
+        </section>
+
+        <!--Decoration Image-->
+        <section class="liquidContainer">
+            <img class="liquidImage rellax" src="./resources/landingPage/liquidBanner.jpg" alt="Decoration image"
+                data-rellax-mobile-speed="-7" data-rellax-desktop-speed="2">
+        </section>
+
+        <!--Projects Section-->
+        <section class="projects" id="projects">
+            <div class="projects-titleContainer">
+                <h2 class="projects-titleContainer__title underlinedTitle">Projects</h2>
+            </div>
+
+            <!--Sweeter Love-->
+            <div class="prjcContainer leftLeaning">
+                <div class="prjcContainer-nameBox">
+                    <h3>ORDER CUSTOMIZATION PROCESS DESIGN</h3>
+                    <div class="prjcContainer-nameBox__logoBox">
+                        <img src="./resources/projects/whiteSLLogo.svg" alt="Sweeter Love logo">
+                    </div>
+                </div>
+
+                <div class="prjcContainer-imgsBox">
+                    <div class="prjcContainer-imgsBox__mockupBox">
+                        <a class="linkToSL"><img src="./resources/projects/sLScreens.png"
+                                alt="Sweeter Love screen MockUps"></a>
+                    </div>
+                    <div class="prjcContainer-imgsBox__sqrBox">
+                        <img src="./resources/projects/pinkRoundedSquare.svg" alt="Decoration square">
+                    </div>
+                </div>
+
+                <div class="prjcContainer-details">
+                    <p class="desc">Sweeter Love is a delivery service of customized breakfasts and desserts; a
+                        sweet surprise for someone special.</p>
+                    <a class="linkToSL">View Project <img src="./resources/projects/pinkArrow.svg" alt="Forward arrow">
+                    </a>
+                </div>
+            </div>
+
+            <!--Perse-->
+            <div class="prjcContaine rightLeaning lastProjectLP">
+                <div class="prjcContainer-nameBox">
+                    <h3>USER INTERFACE DESIGN</h3>
+                    <div class="prjcContainer-nameBox__logoBox">
+                        <img src="./resources/projects/whitePerseLogo.svg" alt="Perse logo">
+                    </div>
+                </div>
+
+                <div class="prjcContainer-imgsBox">
+                    <div class="prjcContainer-imgsBox__mockupBox ps">
+                        <a class="linkToPerse"><img src="./resources/projects/perseScreens.png"
+                                alt="Perse screen MockUps" class="ps shadow"></a>
+                    </div>
+                    <div class="prjcContainer-imgsBox__sqrBox">
+                        <img src="./resources/projects/redRoundedSquare.svg" alt="Decoration shape">
+                    </div>
+                </div>
+
+                <div class="prjcContainer-details">
+                    <p class="desc">With perse you can get information about any art piece just by scanning it with your
+                        phone’s camera. As artsy as convenient.</p>
+                    <a class="linkToPerse">View Project <img src="./resources/projects/redArrow.svg"
+                            alt="Forward arrow">
+                    </a>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="buttonCont">
+                <a class="buttonCont__button pillBorderButton linkToProjects">View all</a>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills">
+            <div class="skills-titleContainer">
+                <h2 class="skills-titleContainer__title underlinedTitle">Skills</h2>
+            </div>
+
+            <!-- All skills go here-->
+            <div class="skillsContainer">
+                <!-- All coding skills go here-->
+                <div class="skillsContainer-categoryCont coding">
+                    <!-- Title go here-->
+                    <div class="skillsContainer-categoryCont-titleBox redBorder">
+                        <h4 class="skillsContainer-categoryCont-titleBox__title">Coding</h4>
+                    </div>
+                    <!-- Logos and names here-->
+                    <div class="skillsContainer-categoryCont-contentBox">
+                        <!-- HTML -->
+                        <div class="skillsContainer-categoryCont-contentBox__skillBox">
+                            <div>
+                                <img src="./resources/html.svg" alt="HTML logo">
+                            </div>
+                            <p class="skillTitle">HTML</p>
+                        </div>
+
+                        <!-- CSS -->
+                        <div class="skillsContainer-categoryCont-contentBox__skillBox">
+                            <div>
+                                <img src="./resources/css.svg" alt="CSS logo">
+                            </div>
+                            <p class="skillTitle">CSS</p>
+                        </div>
+
+                        <!-- JS -->
+                        <div class="skillsContainer-categoryCont-contentBox__skillBox">
+                            <div>
+                                <img src="./resources/js.svg" alt="JavaScript logo">
+                            </div>
+                            <p class="skillTitle">JavaScript</p>
+                        </div>
+
+                        <!-- Sass -->
+                        <div class="skillsContainer-categoryCont-contentBox__skillBox">
+                            <div>
+                                <img src="./resources/sass.svg" alt="Sass logo">
+                            </div>
+                            <p class="skillTitle">Sass</p>
+                        </div>
+
+                        <!-- Node.js -->
+                        <div class="skillsContainer-categoryCont-contentBox__skillBox">
+                            <div>
+                                <img src="./resources/node.svg" alt="Node logo">
+                            </div>
+                            <p class="skillTitle">Node.js</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All design skills go here-->
+                <div class="skillsContainer-categoryCont design">
+                    <!-- Title go here-->
+                    <div class="skillsContainer-categoryCont-titleBox blueBorder">
+                        <h4 class="skillsContainer-categoryCont-titleBox__title">Graphic Design</h4>
+                    </div>
+                    <!-- Logos and names here-->
+                    <div class="skillsContainer-categoryCont-contentBox">
+                        <!-- Illustrator -->
+                        <div class="skillsContainer-categoryCont-contentBox__skillBox">
+                            <div>
+                                <img src="./resources/illustrator.svg" alt="Adobe Illustrator logo">
+                            </div>
+                            <p class="skillTitle">Illustrator</p>
+                        </div>
+
+                        <!-- Photoshop -->
+                        <div class="skillsContainer-categoryCont-contentBox__skillBox">
+                            <div>
+                                <img src="./resources/photoshop.svg" alt="Adobe Photoshop logo">
+                            </div>
+                            <p class="skillTitle">Photoshop</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All proto skills go here-->
+                <div class="skillsContainer-categoryCont prototyping">
+                    <!-- Title go here-->
+                    <div class="skillsContainer-categoryCont-titleBox yellowBorder">
+                        <h4 class="skillsContainer-categoryCont-titleBox__title">Prototyping</h4>
+                    </div>
+                    <!-- Logos and names here-->
+                    <div class="skillsContainer-categoryCont-contentBox">
+                        <!-- Figma -->
+                        <div class="skillsContainer-categoryCont-contentBox__skillBox">
+                            <div>
+                                <img src="./resources/figma.svg" alt="Figma logo">
+                            </div>
+                            <p class="skillTitle">Figma</p>
+                        </div>
+
+                        <!-- InVision -->
+                        <div class="skillsContainer-categoryCont-contentBox__skillBox">
+                            <div>
+                                <img src="./resources/invision.svg" alt="InVision logo">
+                            </div>
+                            <p class="skillTitle">InVision</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- From here on, these container are small -->
+
+                <!-- All video edition skills go here-->
+                <div class="skillsContainer-smallCategoryCont video">
+                    <!-- Title go here-->
+                    <div class="skillsContainer-smallCategoryCont-titleBox redBorder">
+                        <h4 class="skillsContainer-smallCategoryCont-titleBox__title">Video Edition</h4>
+                    </div>
+                    <!-- Logos and names here-->
+                    <div class="skillsContainer-smallCategoryCont-contentBox">
+                        <!-- Figma -->
+                        <div class="skillsContainer-smallCategoryCont-contentBox__skillBox">
+                            <div>
+                                <img src="./resources/resolve.svg" alt="DaVinci's Resolve logo">
+                            </div>
+                            <p class="skillTitle">Resolve</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All writting skills go here-->
+                <div class="skillsContainer-smallCategoryCont writting">
+                    <!-- Title go here-->
+                    <div class="skillsContainer-smallCategoryCont-titleBox blueBorder">
+                        <h4 class="skillsContainer-smallCategoryCont-titleBox__title">Writing</h4>
+                    </div>
+                    <!-- Logos and names here-->
+                    <div class="skillsContainer-smallCategoryCont-contentBox">
+                        <!--Skill Desc-->
+                        <p class="skillDesc">Ability to write mindful texts and tell stories.</p>
+                    </div>
+                </div>
+
+                <!-- All writting skills go here-->
+                <div class="skillsContainer-smallCategoryCont critical">
+                    <!-- Title go here-->
+                    <div class="skillsContainer-smallCategoryCont-titleBox yellowBorder">
+                        <h4 class="skillsContainer-smallCategoryCont-titleBox__title">Critical <br> thinking</h4>
+                    </div>
+                    <!-- Logos and names here-->
+                    <div class="skillsContainer-smallCategoryCont-contentBox">
+                        <!--Skill Desc-->
+                        <p class="skillDesc">Abstracting complex
+                            concepts into simpler ones.</p>
+                    </div>
+                </div>
+
+                <!-- All writting skills go here-->
+                <div class="skillsContainer-smallCategoryCont detailA">
+                    <!-- Title go here-->
+                    <div class="skillsContainer-smallCategoryCont-titleBox redBorder">
+                        <h4 class="skillsContainer-smallCategoryCont-titleBox__title">Attention to <br> detail</h4>
+                    </div>
+                    <!-- Logos and names here-->
+                    <div class="skillsContainer-smallCategoryCont-contentBox">
+                        <!--Skill Desc-->
+                        <p class="skillDesc">Little things make the
+                            difference.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stripes Divider -->
+        <section class="decorationStripes">
+            <img src="./resources/stripes.svg" alt="Decorative colored stripes" class="decorativeStripes">
+            <img src="./resources/longStripes.svg" alt="Decorative colored stripes" class="longDecorativeStripes">
+        </section>
+
+        <!-- Call to Action -->
+        <section class="callActionContact">
+            <h2>Interested in making something great together?</h2>
+            <a class="pillBorderButton linkToAbout">Contact me</a>
+        </section>
+    </main>
+
+    <footer class="pageFooter">
+        <div class="footer__email">
+            <p class="contactType">Email</p>
+            <a class="contactLinks linkToEmail" target="_blank">alexisrmh03@gmail.com</a>
+        </div>
+        <div class="footer__contactMe">
+            <p class="contactType">Contact me</p>
+            <a class="contactLinks linkToFacebook" target="_blank">Facebook</a>
+            <img src="./resources/littleCircle.svg" class="circles" alt="Decoration image">
+            <a class="contactLinks linkToLinkedIn" target="_blank">LinkedIn</a>
+            <img src="./resources/littleCircle.svg" class="circles" alt="Decoration image">
+            <a class="contactLinks linkToInstagram" target="_blank">Instagram</a>
+        </div>
+        <div class="footer__copyright">
+            <p class="copy">&copy; ALEXIS RAMÍREZ 2020</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+        integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+        crossorigin="anonymous"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+</body>
+
+</html>

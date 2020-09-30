@@ -1,0 +1,26 @@
+/* Cabin */ 
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+/* ITC Avant Garde Std */
+@font-face {
+    font-family: 'ITC Avant Garde Std Bk';
+    src: url('../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Demi.eot');
+    src: local('ITC Avant Garde Gothic Std Demi'), local('ITCAvantGardeStd-Demi'),
+        url('../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Demi.eot') format('embedded-opentype'),
+        url('../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Demi.woff2') format('woff2'),
+        url('../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Demi.woff') format('woff'),
+        url('../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Demi.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Std Md';
+    src: url('../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Bold.eot');
+    src: local('ITC Avant Garde Gothic Std Bold'), local('ITCAvantGardeStd-Bold'),
+        url('../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Bold.woff2') format('woff2'),
+        url('../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Bold.woff') format('woff'),
+        url('../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

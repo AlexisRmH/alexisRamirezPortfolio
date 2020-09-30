@@ -1,0 +1,224 @@
+/* To mask the liquid image */
+.liquidContainer {
+    width: 100%;
+    height: 100vw;
+    overflow: hidden;
+    background-color: $bkgrd-color;
+    @include FlexCenter;
+    align-items: flex-end;
+}
+
+.liquidImage {
+    height: 125%;
+}
+
+/* Whole presentation section styles */
+.presentation {
+    box-sizing: border-box;
+    min-height: 75vh;
+    background-color: $bkgrd-color;
+    padding: 5% 5% 5% 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    &-logoContainer {
+        height: 28vh;
+
+        &__logo {
+            height: 100%;
+        }
+    }
+
+    &-title {
+        font-size: clamp(2rem, 10vw, 3rem);
+        margin-top: 1.3rem;
+    }
+
+    &-description {
+        width: 98%;
+        font-size: clamp(1.15rem, 5vw, 1.75rem);
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+
+    &-projectsButton {
+        font-size: 5vw;
+        padding: 1.1rem 1.5rem 0.9rem 1.5rem;
+        @include YellowButton;
+    }
+
+    &-socialMedia {
+        margin-left: auto;
+        margin-top: 0.7rem;
+
+        &__icon {
+            margin-left: 0.7rem;
+        }
+    }
+}
+
+/* Skills Section */
+.skills {
+    min-height: 100vh;
+    width: 100%;
+    background-color: $bkgrd-color;
+    z-index: -100;
+    padding: 8%;
+    box-sizing: border-box;
+
+    @include TitleContainerDetails;
+
+    .skillsContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+         /* NORMAL CONTAINER STYLES */
+        &-categoryCont {
+            padding-bottom: 3.5rem;
+            width: 100%;
+
+            &-titleBox {
+                @include underlinedDivDetails;
+                padding: 0rem 0rem 0.8rem 0.6rem;
+
+                &[class~=redBorder] {
+                    border-color: $main-red;
+                }
+
+                &[class~=blueBorder] {
+                    border-color: $main-cyan;
+                }
+                
+                &[class~=yellowBorder] {
+                    border-color: $main-yellow;
+                }
+            }
+
+            &-contentBox {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                &__skillBox {
+                    width: 33%;
+                    @include FlexCenter;
+                    flex-direction: column;
+                    margin-top: 1.5rem;
+
+                    div {
+                        width: 100%;
+                        height: 100%;
+                        margin-bottom: 0.5rem;
+                        @include FlexCenter;
+
+                        img {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* SMALL CONTAINER STYLES */
+        &-smallCategoryCont {
+            padding-bottom: 3.5rem;
+            width: 45%;
+
+            &-titleBox {
+                @include underlinedDivDetails;
+                padding: 0rem 0rem 0.8rem 0.6rem;
+
+                &[class~=redBorder] {
+                    border-color: $main-red;
+                }
+
+                &[class~=blueBorder] {
+                    border-color: $main-cyan;
+                }
+                
+                &[class~=yellowBorder] {
+                    border-color: $main-yellow;
+                }
+                
+                &__title {
+                    line-height: 1.3rem;
+                }
+            }
+
+            &-contentBox {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                .skillDesc {
+                    padding-left: 0.6rem;
+                    margin-top: 1.5rem;
+                }
+
+                &__skillBox {
+                    width: 70%;
+                    @include FlexCenter;
+                    flex-direction: column;
+                    margin-top: 1.5rem;
+
+                    div {
+                        width: 100%;
+                        height: 100%;
+                        margin-bottom: 0.5rem;
+                        @include FlexCenter;
+
+                        img {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.skillTitle {
+    font-size: 0.8rem;
+    @include AvantGardeBold;
+}
+
+.decorationStripes {
+    width: 100%;
+    background-color: $bkgrd-color;
+
+    img {
+        width: 100%;
+    }
+}
+
+.callActionContact {
+    height: 80vh;
+    width: 100%;
+    background-color: $bkgrd-color; 
+    @include FlexCenter;
+    flex-direction: column;
+
+    h2 {
+        width: 80%;
+        font-size: 1.5rem;
+        text-align: center;  
+        line-height: 2rem;  
+    }
+
+    a {
+        @include YellowButton;
+        padding: 1rem 1.5rem 0.8rem 1.5rem;
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+    }
+}
+
+
+.longDecorativeStripes {
+    display: none;
+}

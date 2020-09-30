@@ -1,0 +1,57 @@
+@include MediaQ-md {
+    .aboutMe {
+        min-height: 80vh;
+        display: grid;
+        grid-template-columns: 42.5% 57.5%;
+        grid-template-rows: 1fr;
+        padding: 0%;
+
+        &__pictureCont {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                width: 60%;
+            }
+        }
+
+        &__personalPresentation {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            align-items: flex-start;
+
+            width: 80%;
+            margin-left: 3rem;
+        }
+    }
+
+    .callActionContact {
+        .talkTitle {
+            &::before {
+                background: $main-yellow;
+                height: 10px;
+            }
+        }
+
+        p {
+            width: 35%;
+            margin-top: 2rem;
+        }
+
+        .socialMedia {
+            margin-top: 1.5rem;
+            
+            a {
+                padding: 0rem 0.5rem 0rem 0.5rem;
+            }
+
+            img {
+                width: 2.5rem;
+            }
+        }
+    }
+}

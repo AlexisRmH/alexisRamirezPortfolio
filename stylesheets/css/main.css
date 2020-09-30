@@ -1,0 +1,1391 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Cabin */
+/* ITC Avant Garde Std */
+@font-face {
+  font-family: 'ITC Avant Garde Std Bk';
+  src: url("../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Demi.eot");
+  src: local("ITC Avant Garde Gothic Std Demi"), local("ITCAvantGardeStd-Demi"), url("../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Demi.eot") format("embedded-opentype"), url("../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Demi.woff2") format("woff2"), url("../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Demi.woff") format("woff"), url("../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Demi.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Std Md';
+  src: url("../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Bold.eot");
+  src: local("ITC Avant Garde Gothic Std Bold"), local("ITCAvantGardeStd-Bold"), url("../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Bold.woff2") format("woff2"), url("../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Bold.woff") format("woff"), url("../../../resources/fonts/ITCAvantGarde/ITCAvantGardeStd-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Main Colors */
+/* Footer Colors */
+/* Other colors */
+/* Font Families */
+/* Header container */
+header {
+  background-color: #00061D;
+  height: 11vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* Styles for the logo */
+.logo-container {
+  height: 62%;
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+.header-logo {
+  height: 100%;
+}
+
+/* Nav Links styling */
+nav a {
+  color: #F6F8FF;
+  font-family: "ITC Avant Garde Std Md", sans-serif;
+  font-weight: bold;
+}
+
+nav .menu-nav {
+  display: block;
+  height: 100%;
+  text-align: right;
+}
+
+nav .menu-nav__item {
+  display: inline;
+  padding-right: 2rem;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  nav .menu-nav__item {
+    display: inline;
+    padding-right: 2rem;
+    font-size: 0.65rem;
+  }
+  .header-logo {
+    margin-left: 1.2rem;
+  }
+}
+
+.pageFooter {
+  background-color: #000411;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+}
+
+.pageFooter .footer__email {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 45%;
+  padding-left: 0.5rem;
+}
+
+.pageFooter .footer__contactMe {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 55%;
+}
+
+.pageFooter .footer__copyright {
+  margin: 1rem 0rem 0.5rem 0rem;
+}
+
+.pageFooter p {
+  color: #959595;
+  font-family: "ITC Avant Garde Std Md", sans-serif;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.pageFooter a {
+  font-family: "Cabin", sans-serif;
+  color: #959595;
+  font-size: 0.7rem;
+  -webkit-text-decoration: underline #5C5C5C;
+          text-decoration: underline #5C5C5C;
+}
+
+.pageFooter .circles {
+  margin: 0rem 0.3rem 0.2rem 0.3rem;
+}
+
+.pageFooter p[class~=copy] {
+  color: #5C5C5C;
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .pageFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.2rem 2.5rem 1.2rem 2rem;
+  }
+  .pageFooter .footer__email {
+    width: auto;
+    margin-right: 3rem;
+  }
+  .pageFooter .footer__contactMe {
+    width: auto;
+  }
+  .pageFooter .footer__copyright {
+    margin-left: auto;
+  }
+}
+
+/* To mask the liquid image */
+.liquidContainer {
+  width: 100%;
+  height: 100vw;
+  overflow: hidden;
+  background-color: #00061D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.liquidImage {
+  height: 125%;
+}
+
+/* Whole presentation section styles */
+.presentation {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 75vh;
+  background-color: #00061D;
+  padding: 5% 5% 5% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.presentation-logoContainer {
+  height: 28vh;
+}
+
+.presentation-logoContainer__logo {
+  height: 100%;
+}
+
+.presentation-title {
+  font-size: clamp(2rem, 10vw, 3rem);
+  margin-top: 1.3rem;
+}
+
+.presentation-description {
+  width: 98%;
+  font-size: clamp(1.15rem, 5vw, 1.75rem);
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.presentation-projectsButton {
+  font-size: 5vw;
+  padding: 1.1rem 1.5rem 0.9rem 1.5rem;
+  color: #FCA311;
+  font-family: "ITC Avant Garde Std Md", sans-serif;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.presentation-socialMedia {
+  margin-left: auto;
+  margin-top: 0.7rem;
+}
+
+.presentation-socialMedia__icon {
+  margin-left: 0.7rem;
+}
+
+/* Skills Section */
+.skills {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #00061D;
+  z-index: -100;
+  padding: 8%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.skills-titleContainer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-titleContainer__title {
+  font-size: 2rem;
+}
+
+.skills-titleContainer__title::before {
+  background: #FCA311;
+}
+
+.skills .skillsContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* NORMAL CONTAINER STYLES */
+  /* SMALL CONTAINER STYLES */
+}
+
+.skills .skillsContainer-categoryCont {
+  padding-bottom: 3.5rem;
+  width: 100%;
+}
+
+.skills .skillsContainer-categoryCont-titleBox {
+  border-bottom: 0.5px solid;
+  padding: 0rem 0rem 0.8rem 0.6rem;
+}
+
+.skills .skillsContainer-categoryCont-titleBox[class~=redBorder] {
+  border-color: #EA5958;
+}
+
+.skills .skillsContainer-categoryCont-titleBox[class~=blueBorder] {
+  border-color: #19D3E0;
+}
+
+.skills .skillsContainer-categoryCont-titleBox[class~=yellowBorder] {
+  border-color: #FCA311;
+}
+
+.skills .skillsContainer-categoryCont-contentBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills .skillsContainer-categoryCont-contentBox__skillBox {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.skills .skillsContainer-categoryCont-contentBox__skillBox div {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .skillsContainer-categoryCont-contentBox__skillBox div img {
+  width: 50%;
+}
+
+.skills .skillsContainer-smallCategoryCont {
+  padding-bottom: 3.5rem;
+  width: 45%;
+}
+
+.skills .skillsContainer-smallCategoryCont-titleBox {
+  border-bottom: 0.5px solid;
+  padding: 0rem 0rem 0.8rem 0.6rem;
+}
+
+.skills .skillsContainer-smallCategoryCont-titleBox[class~=redBorder] {
+  border-color: #EA5958;
+}
+
+.skills .skillsContainer-smallCategoryCont-titleBox[class~=blueBorder] {
+  border-color: #19D3E0;
+}
+
+.skills .skillsContainer-smallCategoryCont-titleBox[class~=yellowBorder] {
+  border-color: #FCA311;
+}
+
+.skills .skillsContainer-smallCategoryCont-titleBox__title {
+  line-height: 1.3rem;
+}
+
+.skills .skillsContainer-smallCategoryCont-contentBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills .skillsContainer-smallCategoryCont-contentBox .skillDesc {
+  padding-left: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.skills .skillsContainer-smallCategoryCont-contentBox__skillBox {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.skills .skillsContainer-smallCategoryCont-contentBox__skillBox div {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .skillsContainer-smallCategoryCont-contentBox__skillBox div img {
+  width: 50%;
+}
+
+.skillTitle {
+  font-size: 0.8rem;
+  font-family: "ITC Avant Garde Std Md", sans-serif;
+  font-weight: bold;
+}
+
+.decorationStripes {
+  width: 100%;
+  background-color: #00061D;
+}
+
+.decorationStripes img {
+  width: 100%;
+}
+
+.callActionContact {
+  height: 80vh;
+  width: 100%;
+  background-color: #00061D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.callActionContact h2 {
+  width: 80%;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.callActionContact a {
+  color: #FCA311;
+  font-family: "ITC Avant Garde Std Md", sans-serif;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 1rem 1.5rem 0.8rem 1.5rem;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
+
+.longDecorativeStripes {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .presentation {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+    -ms-grid-rows: repaet(5, 1fr);
+        grid-template-rows: repaet(5, 1fr);
+    padding: 5% 15% 0% 20%;
+    width: 100%;
+  }
+  .presentation-logoContainer {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    grid-row: 1 / 6;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .presentation-logoContainer__logo {
+    height: 70%;
+  }
+  .presentation-title {
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .presentation-description {
+    font-size: clamp(1rem, 1.4vw, 4rem);
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    line-height: normal;
+    width: 80%;
+    margin-top: 1.2rem;
+  }
+  .presentation-projectsButton {
+    font-size: 1.6vw;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+    margin-top: 1%;
+    display: inline-block;
+    text-align: center;
+    width: 18vw;
+    padding: 0.9rem 0rem 0.9rem 0rem;
+    margin: 1.2rem 0 2rem 0;
+  }
+  .presentation-socialMedia {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+    margin: 1.2rem 0rem 1rem 0rem;
+  }
+  .liquidContainer {
+    height: 75vh;
+    display: block;
+  }
+  .liquidContainer img {
+    width: 100%;
+    height: auto;
+  }
+  .skills-titleContainer {
+    padding: 7% 0% 7% 0%;
+  }
+  .skills-titleContainer__title {
+    font-size: 2.5rem;
+  }
+  .skills-titleContainer__title::before {
+    height: 10px;
+    bottom: -2%;
+  }
+  .decorativeStripes {
+    display: none;
+  }
+  .longDecorativeStripes {
+    display: block;
+  }
+  .callActionContact {
+    height: 70vh;
+  }
+  .callActionContact h2 {
+    font-size: 1.3rem;
+    line-height: normal;
+  }
+  .callActionContact a {
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem 0.7rem 1rem;
+  }
+  .skills {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0% 17.5% 0% 17.5%;
+    width: 100%;
+  }
+  .skills .skillsContainer {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    -webkit-column-gap: 5%;
+            column-gap: 5%;
+  }
+  .skills .skillsContainer .coding {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .skills .skillsContainer .coding .skillsContainer-categoryCont-contentBox {
+    width: 95%;
+  }
+  .skills .skillsContainer .coding .skillsContainer-categoryCont-contentBox__skillBox {
+    width: 15.8%;
+  }
+  .skills .skillsContainer .design {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  .skills .skillsContainer .prototyping {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3 / 5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  .skills .skillsContainer .design .skillsContainer-categoryCont-contentBox, .skills .skillsContainer .prototyping .skillsContainer-categoryCont-contentBox {
+    width: 100%;
+  }
+  .skills .skillsContainer .design .skillsContainer-categoryCont-contentBox__skillBox, .skills .skillsContainer .prototyping .skillsContainer-categoryCont-contentBox__skillBox {
+    width: 31.6%;
+  }
+  .skills .skillsContainer-smallCategoryCont {
+    width: 100%;
+  }
+  .skills .skillsContainer-smallCategoryCont h4 {
+    font-size: 0.8rem;
+  }
+  .skills .skillsContainer .video {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+  }
+  .skills .skillsContainer .writting {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+  }
+  .skills .skillsContainer .critical {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+  }
+  .skills .skillsContainer .detailA {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / 5;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+  }
+  br {
+    display: none;
+  }
+}
+
+/* PROJECTS Main Container */
+.projects {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #00061D;
+  z-index: -100;
+}
+
+.projects-titleContainer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-titleContainer__title {
+  font-size: 2rem;
+}
+
+.projects-titleContainer__title::before {
+  background: #FCA311;
+}
+
+.projects-titleContainer__title {
+  font-size: 2rem;
+}
+
+.projects-titleContainer__title::before {
+  height: 8px;
+}
+
+/* View all button */
+.buttonCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+}
+
+.buttonCont__button {
+  font-size: 1.1rem;
+  padding: 0.8rem 1rem 0.7rem 1rem;
+  color: #FCA311;
+  font-family: "ITC Avant Garde Std Md", sans-serif;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+/* Project Cotainer styles */
+.prjcContainer {
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  overflow: hidden;
+}
+
+.prjcContainer-nameBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.prjcContainer-nameBox h3 {
+  width: 60%;
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+.prjcContainer-nameBox__logoBox {
+  height: 10%;
+}
+
+.prjcContainer-nameBox__logoBox img {
+  height: 100%;
+}
+
+.prjcContainer-imgsBox {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 5% 90% 5%;
+      grid-template-columns: 5% 90% 5%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.5rem;
+}
+
+.prjcContainer-imgsBox__mockupBox {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  z-index: 2;
+}
+
+.prjcContainer-imgsBox__mockupBox img {
+  width: 100%;
+}
+
+.prjcContainer-imgsBox__mockupBox img[class~=shadow] {
+  -webkit-filter: drop-shadow(-10px 15px 15px rgba(0, 0, 0, 0.515));
+          filter: drop-shadow(-10px 15px 15px rgba(0, 0, 0, 0.515));
+}
+
+.prjcContainer-imgsBox__mockupBox img[class~=lightShadow] {
+  -webkit-filter: drop-shadow(-10px 15px 15px rgba(0, 0, 0, 0.247));
+          filter: drop-shadow(-10px 15px 15px rgba(0, 0, 0, 0.247));
+}
+
+.prjcContainer-imgsBox__mockupBox[class~=sl] {
+  width: 90%;
+}
+
+.prjcContainer-imgsBox__mockupBox[class~=ps] {
+  width: 45%;
+}
+
+.prjcContainer-imgsBox__mockupBox[class~=bn] {
+  width: 45%;
+}
+
+.prjcContainer-imgsBox__mockupBox[class~=lg] {
+  width: 80%;
+}
+
+.prjcContainer-imgsBox__sqrBox {
+  width: 70%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  z-index: 0;
+}
+
+.prjcContainer-imgsBox__sqrBox img {
+  width: 100%;
+}
+
+.prjcContainer-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0% 8%;
+  margin-top: 3rem;
+  /* Different color 'View Project' */
+}
+
+.prjcContainer-details p {
+  font-size: 1.2rem;
+}
+
+.prjcContainer-details a {
+  margin-right: auto;
+  margin-top: 1.5rem;
+  font-family: "ITC Avant Garde Std Md", sans-serif;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prjcContainer-details a img {
+  margin-left: 1rem;
+}
+
+.prjcContainer-details a[class=linkToSL] {
+  color: #F10A57;
+}
+
+.prjcContainer-details a[class=linkToPerse] {
+  color: #EA5958;
+}
+
+.prjcContainer-details a[class=linkToBeatin] {
+  color: #19D3E0;
+}
+
+.prjcContainer-details a[class=linkToLogofolio] {
+  color: #FCA311;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0%;
+  }
+  .projects-titleContainer {
+    padding: 7% 0% 7% 0%;
+  }
+  .projects-titleContainer__title {
+    font-size: 2.5rem;
+  }
+  .projects-titleContainer__title::before {
+    height: 10px;
+    bottom: -2%;
+  }
+  .buttonCont {
+    margin: 0rem;
+  }
+  .leftLeaning, .rightLeaning {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% 55%;
+        grid-template-columns: 45% 55%;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    padding: 2.5% 10% 10% 15%;
+  }
+  .leftLeaning .prjcContainer-nameBox, .rightLeaning .prjcContainer-nameBox {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    margin: 0rem 0rem 1.5rem 0rem;
+    padding: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .leftLeaning .prjcContainer-nameBox h3, .rightLeaning .prjcContainer-nameBox h3 {
+    width: 60%;
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  .leftLeaning .prjcContainer-nameBox__logoBox, .rightLeaning .prjcContainer-nameBox__logoBox {
+    height: 40%;
+  }
+  .leftLeaning .prjcContainer-imgsBox, .rightLeaning .prjcContainer-imgsBox {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 95%;
+    margin: 0%;
+    padding: 0%;
+  }
+  .leftLeaning .prjcContainer-details, .rightLeaning .prjcContainer-details {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    margin: 0%;
+    padding: 0% 10% 0% 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .leftLeaning .prjcContainer-details p, .rightLeaning .prjcContainer-details p {
+    font-size: 1rem;
+    line-height: normal;
+    padding-right: 8%;
+  }
+  .leftLeaning .prjcContainer-details a, .rightLeaning .prjcContainer-details a {
+    margin-top: 1.2rem;
+    font-size: 0.9rem;
+  }
+  .rightLeaning {
+    -ms-grid-columns: 55% 45%;
+        grid-template-columns: 55% 45%;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    padding: 2.5% 12.5% 10% 12.5%;
+  }
+  .rightLeaning .prjcContainer-nameBox {
+    padding-left: 10%;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .rightLeaning .prjcContainer-imgsBox {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+    padding-right: 27.5%;
+  }
+  .rightLeaning .prjcContainer-details {
+    padding-left: 10%;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  .rightLeaning .prjcContainer-details p {
+    padding-right: 0rem;
+  }
+  .lastProjectLP {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.aboutMe {
+  background-color: #00061D;
+  min-height: 80vh;
+  padding-bottom: 20%;
+}
+
+.aboutMe__pictureCont {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 10% 0% 15% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe__pictureCont img {
+  width: 70%;
+}
+
+.aboutMe__personalPresentation {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 0% 10% 0% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutMe__personalPresentation p {
+  font-size: 1rem;
+  margin-top: 7.5%;
+}
+
+.callActionContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.callActionContact .talkTitle {
+  font-size: 2rem;
+}
+
+.callActionContact .talkTitle::before {
+  background: #FCA311;
+  height: 8px;
+}
+
+.callActionContact p {
+  margin-top: 5%;
+  width: 70%;
+  text-align: center;
+}
+
+.callActionContact .socialMedia {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+.callActionContact .socialMedia a {
+  padding: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.callActionContact .socialMedia img {
+  width: 75%;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutMe {
+    min-height: 80vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 42.5% 57.5%;
+        grid-template-columns: 42.5% 57.5%;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    padding: 0%;
+  }
+  .aboutMe__pictureCont {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .aboutMe__pictureCont img {
+    width: 60%;
+  }
+  .aboutMe__personalPresentation {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 80%;
+    margin-left: 3rem;
+  }
+  .callActionContact .talkTitle::before {
+    background: #FCA311;
+    height: 10px;
+  }
+  .callActionContact p {
+    width: 35%;
+    margin-top: 2rem;
+  }
+  .callActionContact .socialMedia {
+    margin-top: 1.5rem;
+  }
+  .callActionContact .socialMedia a {
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+  .callActionContact .socialMedia img {
+    width: 2.5rem;
+  }
+}
+
+/* General styles to create a Pill Border Button */
+.pillBorderButton {
+  border: 2px solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  background-color: transparent;
+}
+
+.underlinedTitle {
+  position: relative;
+  z-index: 1;
+}
+
+.underlinedTitle::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+  background: #FCA311;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.35rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: #F6F8FF;
+  font-family: "ITC Avant Garde Std Md", sans-serif;
+  font-weight: bold;
+}
+
+h4 {
+  color: #F6F8FF;
+  font-family: "ITC Avant Garde Std Bk", sans-serif;
+}
+
+p {
+  color: #F6F8FF;
+  font-family: "Cabin", sans-serif;
+  line-height: 23px;
+}
+
+.yHighlight {
+  color: #FCA311;
+}
+
+.bHighlight {
+  color: #19D3E0;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  color: #FCA311;
+}
+/*# sourceMappingURL=main.css.map */

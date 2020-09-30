@@ -1,0 +1,159 @@
+/* PROJECTS Main Container */
+.projects {
+    min-height: 100vh;
+    width: 100%;
+    background-color: $bkgrd-color;
+    z-index: -100;
+
+    @include TitleContainerDetails;
+
+    &-titleContainer {
+        &__title {
+            font-size: 2rem;
+
+            &::before {
+                height: 8px;
+            }
+        }
+    }
+}
+
+/* View all button */ 
+.buttonCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 2rem;
+
+    &__button {
+        font-size: 1.1rem;
+        padding: 0.8rem 1rem 0.7rem 1rem;
+        @include YellowButton;
+    }
+}
+
+/* Project Cotainer styles */
+
+.prjcContainer {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    overflow: hidden;
+
+    &-nameBox {
+        @include FlexCenter;
+        flex-direction: column;
+
+        text-align: center;
+
+        h3 {
+            width: 60%;
+            font-size: 0.8rem;
+            padding-bottom: 1rem;
+        }
+
+        &__logoBox {
+            height: 10%;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    &-imgsBox {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        margin-top: 2.5rem;
+
+        &__mockupBox {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            z-index: 2;
+
+            img {
+                width: 100%;
+            }
+
+            img[class~=shadow] {
+                @include DropShadow;
+            }
+            
+            img[class~=lightShadow] {
+                @include LightDropShadow;
+            }
+        }
+
+        &__mockupBox[class~=sl] {
+            width: 90%;
+        }
+
+        &__mockupBox[class~=ps] {
+            width: 45%;
+        }
+
+        &__mockupBox[class~=bn] {
+            width: 45%;
+        }
+        
+        &__mockupBox[class~=lg] {
+            width: 80%;
+        }
+
+        &__sqrBox {
+            width: 70%;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            z-index: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &-details {
+        @include FlexCenter;
+        flex-wrap: wrap;
+        padding: 0% 8%;
+        margin-top: 3rem;
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        a {
+            margin-right: auto;
+            margin-top: 1.5rem;
+            @include AvantGardeBold;
+            @include FlexCenter;
+
+            img {
+                margin-left: 1rem;
+            }
+        }
+
+        /* Different color 'View Project' */
+        a[class=linkToSL] {
+            color: $arrow-pink;
+        }
+
+        a[class=linkToPerse] {
+            color: $main-red;
+        }
+
+        a[class=linkToBeatin] {
+            color: $main-cyan;
+        }
+        
+        a[class=linkToLogofolio] {
+            color: $main-yellow;
+        }
+    }
+}
+

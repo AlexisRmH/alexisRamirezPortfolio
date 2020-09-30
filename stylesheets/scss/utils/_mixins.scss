@@ -1,0 +1,72 @@
+@mixin FlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin YellowButton {
+    color: $main-yellow;
+    font-family: $avantGarde;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+@mixin TitleContainerDetails {
+    &-titleContainer {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20%;
+
+        @include FlexCenter;
+
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__title::before {
+            background: $main-yellow;
+        }
+    }
+}
+
+@mixin DesktopTitleContainerDetails {
+    padding: 7% 0% 7% 0%;
+
+    &__title {
+        font-size: 2.5rem;
+
+        &::before {
+            height: 10px;
+            bottom: -2%;
+        }
+    }
+}
+
+@mixin underlinedDivDetails {
+    border-bottom: 0.5px solid;
+}
+
+@mixin AvantGardeBold {
+    font-family: $avantGarde;
+    font-weight: bold;
+}
+
+@mixin DropShadow {
+    filter: drop-shadow(-10px 15px 15px rgba(0, 0, 0, 0.515));
+}
+
+@mixin LightDropShadow {
+    filter: drop-shadow(-10px 15px 15px rgba(0, 0, 0, 0.247));
+}
+
+@mixin MediaQ-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin MediaQ-xl {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}

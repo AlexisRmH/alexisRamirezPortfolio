@@ -1,0 +1,51 @@
+@import "./base/reset", "./base/fonts", "./utils/variables", "./utils/functions", "./utils/mixins", "./layout/header", "./layout/footer", "./pages/landingPage", "./pages/desktopLandingPage", "./pages/projects", "./pages/desktopProjects", "./pages/about", "./pages/desktopAbout", "./components/pillBorderButton", "./components/underlinedTitle";
+
+html {
+    scroll-behavior: smooth;
+}
+
+@include MediaQ-md {
+    html {
+        font-size: 1.25rem;
+    }
+}
+
+@include MediaQ-md {
+    html {
+        font-size: 1.35rem;
+    }
+}
+
+h1,
+h2,
+h3 {
+    color: $text-color;
+    @include AvantGardeBold;
+}
+
+h4 {
+    color: $text-color;
+    font-family: $avantGardeDemi;
+}
+
+p {
+    color: $text-color;
+    font-family: $cabin;
+    line-height: 23px;
+}
+
+.yHighlight {
+    color: $main-yellow;
+}
+
+.bHighlight {
+    color: $main-cyan;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    color: $main-yellow;
+}

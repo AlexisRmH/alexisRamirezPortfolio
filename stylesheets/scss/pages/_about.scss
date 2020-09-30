@@ -1,0 +1,63 @@
+.aboutMe {
+    background-color: $bkgrd-color;
+    min-height: 80vh;
+    padding-bottom: 20%;
+
+    &__pictureCont {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10% 0% 15% 0%;
+        @include FlexCenter;
+
+        img {
+            width: 70%;
+        }
+    }
+
+    &__personalPresentation {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0% 10% 0% 10%;
+        @include FlexCenter;
+        flex-direction: column;
+
+        p {
+            font-size: 1rem;
+            margin-top: 7.5%;
+        }
+    }
+}
+
+.callActionContact {
+    @include FlexCenter;
+
+    .talkTitle {
+        font-size: 2rem;
+
+        &::before {
+            background: $main-yellow;
+            height: 8px;
+        }
+    }
+
+    p {
+        margin-top: 5%;
+        width: 70%;
+        text-align: center;
+    }
+
+    .socialMedia {
+        width: 100%;
+        @include FlexCenter;
+        margin-top: 5%;
+
+        a {
+            padding: 0%;
+            @include FlexCenter;
+        }
+        
+        img {
+            width: 75%;
+        }
+    }
+}
